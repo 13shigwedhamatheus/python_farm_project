@@ -51,4 +51,46 @@ elif a == b :
 else :
     print("a is less than b")
 //////////////////////////////////////////////////////////////
-'''
+
+#Working with loops and list/containers in python
+
+list = [1,2,3,4,5,6,7,8]
+
+for x in list:
+    if x == 2:
+        print("the value is 2")
+    else:
+        print("its not 2")
+///////////////////////////////////////////////////////////////
+'''     
+def  user_interface():
+    print("Hello There!!\n/////////////////////")
+    print("1.Enter Your Task:")
+    print("2.View Task list:")
+
+while True:
+    try:
+        user_interface()
+        user_input = int(input("\nSelect Option:\n"))
+
+        while True:
+                task_list = []
+                if user_input == 1:
+                    tasks = str(input("////////////////\nEnter Your Task:\n"))
+                    task_list.append(tasks)
+                    print("Task successfully added\n...................................\n")
+                    break
+
+                elif user_input == 2:
+                    print(task_list)
+                    break
+                elif user_input == 5:
+                     break
+                else:
+                    print("Sorry,Selected Option is Invalid!!\n\n")
+                    break
+    except :
+        print("Invalid Input\n")
+
+
+
